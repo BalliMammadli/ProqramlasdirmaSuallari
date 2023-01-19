@@ -1,7 +1,11 @@
 #  Daxil edilən argumentlərin cəmini tapan funksiya yazın.
 
 def sum(*args):
-    pass
-    # pass ifadesini silin və öz kodunuzu yazın
+    def sum(*args):
+    sum=0
+    for i in args:
+       sum=sum+i
+    return sum
+print(sum(1,2,3,4))
+
     
-sum(1, 2, 3, 4, 5) # 15
